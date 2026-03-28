@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+  <nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <div class="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#project">Projects</a>
+    <a href="#contact">Contact</a>
+    </div>
+  </nav>
+    <header> <!--what is a header-->
+      <h1>Onyenekwe Charlene</h1>
+      <p>Aspiring Full Stack Developer | Student | Learner</p>
+      <a class="btn" href="https://github.com/charleneo-1" target="_blank">Visit My GitHub</a> <!--how to make the button lose the link look-->
+      <a class="btn" href="https://linkedin.com/" target="_blank">Visit My LinkedIn</a>
+      <button onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button> <!--move to nav-->
+    </header> 
+
+    <section id="about">
+      <h2>About Me</h2>
+      <P>project description</P>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <P>HTML</P>
+      <div class="skill-bar">
+      <div class="skill-level" style="width: 90%;">
+      </div>
+      </div>
+      <P>CSS</P>
+      <div class="skill-bar">
+      <div class="skill-level" style="width: 70%;"></div> 
+      </div>
+      </div>
+      <P>JavaScript</P>
+      <div class="skill-bar">
+      <div class="skill-level" style="width: 80%;">
+      </div>
+      </div>
+      <P>C++</P>
+      <div class="skill-bar">
+      <div class="skill-level" style="width: 60%;">
+      </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <P>project description</P>
+    </section>
+
+    <section id="project">
+      <h2>My Projects</h2>
+      <div class="project"> <!--why are we using div?-->
+        <h3>Project 1</h3>
+        <p>project description</p>
+      </div>
+      <div class="project"> 
+        <h3>Project 2</h3>
+        <p>project description</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:charleneonyenekwe1@gmail.com">charleneonyenekwe1@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>2026 Onyenekwe Charlene</p> <!--how to add the copyright symbol-->
+      <a href="https://github.com/charleneo-1" target="_blank">Github</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="mailto:charleneonyenekwe1@gmail.com">Email</a>
+    </footer>
+
+  </body>
+</html>

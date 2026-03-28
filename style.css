@@ -1,0 +1,91 @@
+@media (max-width: 600px) {
+  nav a{
+    display: block;
+    margin: 10 px 0;
+  }
+}
+
+/*how to make the hamburger show on both laptop and phone*/
+/*explain this code*/
+#menu-toggle{
+  display: none;
+}
+.hamburger{
+  font-size: 30px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+/*MOBILE MENU*/
+@media (max-width: 600px) {
+  .hamburger{
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+}
+nav .menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+  }
+#menu-toggle:checked + .hamburger + .menu{
+    display: block;
+  }
+nav .menu a{
+    margin: 10px 0;
+  }
+
+
+.btn{
+  display: inline-block;
+  padding: 10px 15px; /*explain*/
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.btn hover{
+  background-color: black;
+}
+
+/*DARK MODE*/
+body.dark{
+ background-color: #111;
+}
+body.dark section{
+  background-color: #222;
+}
+body.dark .skill-level{
+  background-color: yellow;
+}
+
+/*SKILLS not working*/
+.skill-bar{
+  background-color: #eee;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.skill-bar{
+  background-color: #333;
+  width: 0%;
+  height: 15px;
+  border-radius: 10px;
+  transition: 1s; /*for what?*/
+}
+
+/*FOOTER*/
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+footer a{
+  color: white;
+}
