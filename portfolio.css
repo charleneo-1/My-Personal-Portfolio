@@ -29,7 +29,7 @@ nav .menu{
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #222;
+    background-color: white;
   }
 #menu-toggle:checked + .hamburger + .menu{
     display: block;
@@ -37,7 +37,6 @@ nav .menu{
 nav .menu a{
     margin: 10px 0;
   }
-
 
 .btn{
   display: inline-block;
@@ -55,28 +54,34 @@ nav .menu a{
 /*DARK MODE*/
 body.dark{
  background-color: #111;
+ color: white;
 }
-body.dark section{
-  background-color: #222;
-}
-body.dark .skill-level{
+body.dark .fill{
   background-color: yellow;
 }
-
+body.dark #contact a {
+  color: lightskyblue;
+}
 /*SKILLS not working*/
-.skill-bar{
-  background-color: #eee;
-  width: 100%;
-  height: 15px;
+.track{
+  background: lightgray;
+  width: 10%;
+  height: 8px;
   border-radius: 10px;
   margin-top: 5px;
+  overflow: hidden;
 }
-.skill-bar{
-  background-color: #333;
-  width: 0%;
-  height: 15px;
+.fill{
+  background: rgb(72, 150, 72);
+  height: 8px;
   border-radius: 10px;
-  transition: 1s; /*for what?*/
+  animation: loads 2s forwards;
+}
+
+@keyframes load{
+  to{
+    width: var(--level);;
+  }
 }
 
 /*FOOTER*/
